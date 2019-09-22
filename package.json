@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.17",
     "@mdx-js/mdx": "^1.4.5",
     "@mdx-js/react": "^1.4.5",
     "gatsby": "^2.15.20",
@@ -29,7 +30,8 @@
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "theme-ui": "^0.2.43"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

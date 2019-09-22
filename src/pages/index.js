@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -20,12 +19,12 @@ class BlogIndex extends React.Component {
           return (
             <article key={node.fields.slug}>
               <header>
-                <h3>
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
+                <h2>
+                  <Link to={node.fields.slug}>{title}</Link>
+                </h2>
+                <small style={{ fontWeight: `bold` }}>
+                  {node.frontmatter.date}
+                </small>
               </header>
               <section>
                 <p

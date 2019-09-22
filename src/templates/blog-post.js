@@ -1,4 +1,5 @@
 import React from "react"
+import { Container } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -38,7 +39,9 @@ class BlogPostTemplate extends React.Component {
           <MDXRenderer>{post.body}</MDXRenderer>
           <hr />
           <footer>
-            <Bio />
+            <Container>
+              <Bio />
+            </Container>
           </footer>
         </article>
 

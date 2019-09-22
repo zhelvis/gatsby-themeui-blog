@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx, Styled } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
@@ -16,7 +17,7 @@ const Bio = () => {
         siteMetadata {
           author
           social {
-            twitter
+            vk
           }
         }
       }
@@ -35,6 +36,7 @@ const Bio = () => {
         alt={author}
         style={{
           minWidth: 50,
+          marginRight: "1rem",
           borderRadius: `100%`,
         }}
         imgStyle={{
@@ -42,12 +44,12 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        Written by <strong>{author}</strong> who lives and works in Moscow
+        building useful things.
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <Styled.a href={`https://vk.com/${social.vk}`}>
+          You should follow him on VK
+        </Styled.a>
       </p>
     </div>
   )
