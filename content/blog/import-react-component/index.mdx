@@ -1,0 +1,37 @@
+---
+title: Import React Component via MDX
+date: "2015-05-01T22:12:03.284Z"
+description: "Import React Component via MDX"
+---
+
+import Foo from "../../../src/components/test"
+
+This is my first mdx post!
+
+React component in MDX provider
+
+```javascript
+import React from "react"
+import { MDXProvider } from "@mdx-js/react"
+
+const MyH1 = props => <h1 style={{ color: "red" }} {...props} />
+
+const components = {
+  h1: MyH1,
+}
+
+export const wrapRootElement = ({ element }) => (
+  <MDXProvider components={components}>{element}</MDXProvider>
+)
+```
+
+# Hi, i'm a react component from provider
+
+React component imported directly
+
+```md
+import Foo from "../../../src/components/test"
+<Foo />
+```
+
+<Foo />
