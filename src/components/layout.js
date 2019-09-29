@@ -7,6 +7,7 @@ import {
   Footer,
   Container,
   useColorMode,
+  Styled
 } from "theme-ui"
 import { Link } from "gatsby"
 import Button from "./button"
@@ -57,7 +58,7 @@ export default props => {
       <Footer>
         <Container style={{ textAlign: `center` }}>
           © {new Date().getFullYear()}, Built with{" "}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>
         </Container>
       </Footer>
     </Layout>

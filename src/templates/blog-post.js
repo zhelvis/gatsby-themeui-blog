@@ -1,6 +1,7 @@
 import React from "react"
 import { Container } from "theme-ui"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import  Link  from "../components/link"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Bio from "../components/bio"
