@@ -1,14 +1,14 @@
 export default {
   useCustomProperties: false,
   colors: {
-    text: "#000",
+    text: "#121212",
     background: "#fff",
-    primary: "#07c",
+    primary: "#6200ee",
     modes: {
       dark: {
         text: "#fff",
-        background: "#000",
-        primary: "#0cf",
+        background: "#121212",
+        primary: "#03dac6",
       },
     },
   },
