@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby Theme UI Blog`,
     author: `Vladimir Zhelvis`,
     description: `A starter blog demonstrating what Gatsby + theme UI can do.`,
-    siteUrl: `https://boring-ride-462be1.netlify.com/`,
+    siteUrl: `https://gatsby-theme-ui-example.netlify.com/`,
     social: {
       vk: `v.zhelvis`,
     },
