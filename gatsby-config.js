@@ -54,7 +54,8 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    //`gatsby-plugin-feed`,
+    /*
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -68,6 +69,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    */
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`
   ],

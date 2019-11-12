@@ -10,7 +10,6 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
-    slug: "{{title}}/index.md"
     editor:
      preview: false
     fields:
